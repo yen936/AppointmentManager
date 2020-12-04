@@ -1,7 +1,10 @@
 # AppointmentManager
 
+
+
 <!-- Appointment Manager -->
 ## About The Project
+
 
 Appointment Manager is a desktop application to help manage customer-facing meetings for an organization. Appointment Manager features a hosted MySql backend letting users schedule wherever they go. Appointment Manager is written in Java.
 
@@ -49,7 +52,9 @@ The report shows all of the contacts that should be followed up with.
 | 1               | Anika Costa   | acoasta@company.com |
 
 
-### Meta
+
+
+## Meta
 
 ```python
 public meta = {
