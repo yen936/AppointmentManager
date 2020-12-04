@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AppointmentManager.Controllers.ModifyCustomerViewController">
+   <children>
+      <Label layoutX="86.0" layoutY="64.0" text="Modify Customer ID:">
+         <font>
+            <Font name="Montserrat Regular" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="86.0" layoutY="122.0" text="Name" />
+      <TextField fx:id="nameField" layoutX="155.0" layoutY="118.0" promptText="Name" />
+      <Label layoutX="86.0" layoutY="163.0" text="Address" />
+      <TextField fx:id="addressField" layoutX="155.0" layoutY="159.0" promptText="Address" />
+      <Label fx:id="customerID" layoutX="325.0" layoutY="64.0" prefHeight="27.0" prefWidth="149.0" text="ID" textFill="#0055ff">
+         <font>
+            <Font name="Montserrat Regular" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="86.0" layoutY="254.0" text="Phone" />
+      <TextField fx:id="phoneField" layoutX="155.0" layoutY="250.0" promptText="Phone" />
+      <Label layoutX="86.0" layoutY="207.0" text="Postal Code" />
+      <TextField fx:id="postalField" layoutX="155.0" layoutY="203.0" promptText="Postal Code" />
+      <Label layoutX="82.0" layoutY="357.0" text="Division" />
+      <Label layoutX="86.0" layoutY="304.0" text="Country" />
+      <ComboBox fx:id="divisionCombo" layoutX="154.0" layoutY="353.0" prefWidth="150.0" promptText="Select a Divsion" />
+      <ComboBox fx:id="countryCombo" layoutX="154.0" layoutY="300.0" prefWidth="150.0" promptText="Select a Country" />
+      <Button fx:id="saveButton" layoutX="149.0" layoutY="445.0" mnemonicParsing="false" onAction="#saveMod" text="Save" />
+      <Button fx:id="cancelButton" layoutX="244.0" layoutY="445.0" mnemonicParsing="false" onAction="#setCancelButton" text="Cancel" textFill="#fd0505" />
+   </children>
+</AnchorPane>

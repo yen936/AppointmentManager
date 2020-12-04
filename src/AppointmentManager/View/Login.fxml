@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AppointmentManager.Controllers.LoginViewController">
+   <children>
+      <Label fx:id="loginTitle" alignment="CENTER" layoutX="98.0" layoutY="65.0" prefHeight="43.0" prefWidth="203.0" text="Login" textAlignment="CENTER">
+         <font>
+            <Font name="Montserrat Regular" size="35.0" />
+         </font></Label>
+      <PasswordField fx:id="passwordField" layoutX="126.0" layoutY="274.0" promptText="Password" />
+      <Button fx:id="loginButton" layoutX="159.0" layoutY="362.0" mnemonicParsing="false" onAction="#setLoginButton" prefHeight="26.0" prefWidth="81.0" text="Login" />
+      <TextField fx:id="usernameField" layoutX="126.0" layoutY="207.0" promptText="Username" />
+      <Label fx:id="statusText" alignment="CENTER" layoutX="138.0" layoutY="319.0" prefHeight="18.0" prefWidth="124.0" text="" textAlignment="CENTER" />
+      <Label fx:id="locationLabel" alignment="CENTER" layoutX="88.0" layoutY="153.0" prefHeight="18.0" prefWidth="223.0" textAlignment="CENTER" />
+   </children>
+</AnchorPane>

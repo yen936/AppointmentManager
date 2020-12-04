@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AppointmentManager.Controllers.ReportsViewController">
+   <children>
+      <Button fx:id="backButton" layoutX="34.0" layoutY="43.0" mnemonicParsing="false" onAction="#setBackButton" text="Back" />
+      <Button fx:id="numberApptsButton" layoutX="267.0" layoutY="135.0" mnemonicParsing="false" onAction="#showApptsReport" text="Show Report" />
+       <TableView fx:id="apptTable" layoutX="67.0" layoutY="391.0" prefHeight="194.0" prefWidth="836.0">
+           <columns>
+               <TableColumn id="apptIDCol" fx:id="apptIDCol" prefWidth="40.19999694824219" text="ID" />
+               <TableColumn id="titleCol" fx:id="titleCol" prefWidth="83.0" text="Title" />
+               <TableColumn id="discCol" fx:id="discriptionCol" prefWidth="103.39999389648438" text="Discription" />
+               <TableColumn id="locationCol" fx:id="locationCol" prefWidth="91.19998168945312" text="Location" />
+               <TableColumn id="contactCol" fx:id="contactCol" prefWidth="94.39999389648438" text="Contact" />
+               <TableColumn id="typeCol" fx:id="typeCol" prefWidth="59.20001220703125" text="Type" />
+               <TableColumn id="startCol" fx:id="startCol" prefWidth="109.79998779296875" text="Start" />
+               <TableColumn id="endCol" fx:id="endCol" prefWidth="120.0" text="End" />
+               <TableColumn id="customerIdCol" fx:id="customerIDCol" prefWidth="112.0" text="Customer ID" />
+           </columns>
+       </TableView>
+      <Label layoutX="34.0" layoutY="124.0" text="Total Appointments &#10;by Type and Month">
+         <font>
+            <Font name="Montserrat Regular" size="19.0" />
+         </font></Label>
+      <Label layoutX="33.0" layoutY="221.0" text="Schedule by Contact">
+         <font>
+            <Font name="Montserrat Regular" size="19.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="contactCombo" layoutX="267.0" layoutY="221.0" onAction="#updateTableScheduleReport" prefWidth="150.0" promptText="Contact" />
+      <Button fx:id="doneButton" layoutX="440.0" layoutY="221.0" mnemonicParsing="false" onAction="#setDoneButton" text="Done" />
+      <Label layoutX="33.0" layoutY="288.0" text="Contacts Followup &#10;(Past Appointments)">
+         <font>
+            <Font name="Montserrat Regular" size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="followUpButton" layoutX="267.0" layoutY="287.0" mnemonicParsing="false" onAction="#setFollowUpButton" text="Show Report" />
+      <TableView fx:id="contactTable" layoutX="478.0" layoutY="288.0" prefHeight="183.0" prefWidth="314.0">
+        <columns>
+          <TableColumn fx:id="contactIdCol" prefWidth="102.20001220703125" text="Contact ID" />
+          <TableColumn fx:id="contactEmailCol" prefWidth="104.20001220703125" text="Contact Email" />
+            <TableColumn fx:id="contactNameCol" prefWidth="104.60003662109375" text="Contact Name" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
