@@ -1,5 +1,5 @@
 # AppointmentManager
->Appointment Management System built with JavaFX 11 and JavaDoc Documentaion
+>Appointment Management System built with JavaFX 11 with JavaDoc Documentation
 
 
 <!-- Appointment Manager -->
